@@ -10,7 +10,12 @@ import os
 import re
 import sys
 
-LS = r"C:\Users\donnie.gou\AppData\Roaming\@deepseek-ai\dsh-desktop\Local Storage\leveldb"
+# Chromium keeps the renderer's localStorage on disk. Override with:
+#   python read_trace.py "<path to .../Local Storage/leveldb>"
+DEFAULT_LS = os.path.expandvars(
+    r"%APPDATA%\@deepseek-ai\dsh-desktop\Local Storage\leveldb"
+)
+LS = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_LS
 KEY = b"dsh-pet:trace"
 
 files = sorted(

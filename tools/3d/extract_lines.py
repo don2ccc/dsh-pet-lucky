@@ -7,8 +7,10 @@ import json
 import os
 import sys
 
-CLIENT = r"D:\Donnie\PP\dsh-pet\client.js"
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "lines.json")
+HERE = os.path.dirname(os.path.abspath(__file__))
+PET_ROOT = os.path.dirname(os.path.dirname(HERE))   # tools/3d -> repo root
+CLIENT = os.path.join(PET_ROOT, "client.js")
+OUT = os.path.join(HERE, "lines.json")
 
 with open(CLIENT, encoding="utf-8") as f:
     src = f.read()
@@ -41,7 +43,7 @@ out = {
 
 # keep the plugin-list metadata in sync with what is installed now
 for lang in ("zh", "en"):
-    path = os.path.join(r"D:\Donnie\PP\dsh-pet\locale", f"{lang}.json")
+    path = os.path.join(PET_ROOT, "locale", f"{lang}.json")
     if os.path.exists(path):
         with open(path, encoding="utf-8") as f:
             meta = json.load(f).get("meta", {})

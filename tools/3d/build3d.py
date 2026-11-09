@@ -46,7 +46,8 @@ def fit(path, W=513, H=400):
     canvas.save(buf, "WEBP", quality=88, method=6)
     return base64.b64encode(buf.getvalue()).decode(), W, H
 
-pet_assets = r"D:\Donnie\PP\dsh-pet\assets"
+PET_ROOT = os.path.dirname(os.path.dirname(HERE))   # tools/3d -> repo root
+pet_assets = os.path.join(PET_ROOT, "assets")
 idle_b64, PW, PH = fit(os.path.join(pet_assets, "idle.webp"))
 ann_b64, _, _ = fit(os.path.join(pet_assets, "announce.webp"))
 
