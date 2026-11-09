@@ -1,0 +1,49 @@
+{
+  "name": "dsh-pet-lucky",
+  "version": "1.0.0",
+  "description": "Lucky — a draggable 3D parrot desk pet for the DeepSeek Harness Web UI.",
+  "type": "module",
+  "license": "MIT",
+  "author": "don2ccc",
+  "homepage": "https://github.com/don2ccc/dsh-pet-lucky",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/don2ccc/dsh-pet-lucky.git"
+  },
+  "bugs": {
+    "url": "https://github.com/don2ccc/dsh-pet-lucky/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "desk-pet",
+    "pet",
+    "three-js",
+    "parrot",
+    "webgl",
+    "gizmo"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./assets/icon.png"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "assets/icon.png"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

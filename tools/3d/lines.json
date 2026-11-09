@@ -1,0 +1,74 @@
+{
+  "_readme": [
+    "这是桌宠全部可见文案，改完运行 apply_lines.py 再重启应用即可生效。",
+    "name = 悬停时显示的名字；aria = 无障碍标签；hint = 鼠标停留提示。",
+    "line1..lineN = 点它一下随机说一句（可以加到 line9、line10…，代码会自动发现）。",
+    "chatter1..N = 你打字时它碎碎念（同样可加）。",
+    "lineReconnect / lineBroadcast / lineReturn / lineWake / lineDone / lineSent 对应固定时机。",
+    "气泡最大宽度约 13em，中文一句建议不超过 14 字，否则会折成两三行。"
+  ],
+  "meta": {
+    "zh": {
+      "title": "Lucky桌宠",
+      "description": "一只会动的 3D 鹦鹉桌宠：待机时收翅站立、轻轻呼吸；你打字它开始走；AI 开始干活它就跑起来，拿到答案时张开翅膀飞一下。"
+    },
+    "en": {
+      "title": "Lucky the Desk Pet",
+      "description": "A living 3D parrot in the corner of the Harness window: it perches and breathes while idle, walks when you type, runs while the agent works, and spreads its wings to fly when the answer lands."
+    }
+  },
+  "zh": {
+    "name": "Lucky",
+    "aria": "Lucky，一只可拖动的 3D 鹦鹉桌宠。点一下它会说话，右键看它播报。",
+    "hint": "拖动我 · 点一下说话 · 右键播报",
+    "line1": "在呢，我一直在桅杆上。",
+    "line2": "先歇一会儿，我帮你看着风。",
+    "line3": "这个 bug 看着眼熟，让我啄啄看。",
+    "line4": "别熬太晚，我的眼圈可没你的深。",
+    "line5": "我偷吃了一口你的任务列表。",
+    "line6": "要跑测试吗？我可以当吉祥物。",
+    "line7": "摸摸羽毛，效率 +1。",
+    "line8": "今天也辛苦啦。",
+    "lineReconnect": "重新连上了，我回来了。",
+    "lineBroadcast": "站上栖木了 —— 试音，喂喂。",
+    "lineReturn": "你回来啦，我一直在这儿。",
+    "lineWake": "啊……我在！刚才只是顺了顺羽毛。",
+    "lineDone": "搞定了，呱！",
+    "lineSent": "接单了，我先飞一趟。",
+    "chatter1": "嗯嗯。",
+    "chatter2": "在听在听。",
+    "chatter3": "喳喳…",
+    "chatter4": "这个思路可以。",
+    "chatter5": "记下了。",
+    "chatter6": "继续说。",
+    "chatter7": "哦？有意思。",
+    "chatter8": "我听着呢。"
+  },
+  "en": {
+    "name": "Lucky",
+    "aria": "Lucky, a draggable 3D parrot desk pet. Click it to hear a line, right-click to see it broadcast.",
+    "hint": "Drag me · click to talk · right-click to broadcast",
+    "line1": "Right here — still perched on the mast.",
+    "line2": "Take a breather. I'll keep an eye on the wind.",
+    "line3": "That bug looks familiar. Let me peck at it.",
+    "line4": "Don't stay up too late — my eye rings are lighter than yours.",
+    "line5": "I took a bite out of your task list.",
+    "line6": "Shall we run the tests? I can be the mascot.",
+    "line7": "Smooth the feathers: +1 productivity.",
+    "line8": "Good work today.",
+    "lineReconnect": "Reconnected — I'm back on the perch.",
+    "lineBroadcast": "On the perch. Testing, one two.",
+    "lineReturn": "You're back. I kept the perch warm.",
+    "lineWake": "Ah — I'm up! I was only preening.",
+    "lineDone": "Done and dusted — squawk!",
+    "lineSent": "On it. I'll fly this one out.",
+    "chatter1": "Mm-hm.",
+    "chatter2": "Go on.",
+    "chatter3": "Caw caw…",
+    "chatter4": "That's a good angle.",
+    "chatter5": "Noted.",
+    "chatter6": "Keep going.",
+    "chatter7": "Oh? Interesting.",
+    "chatter8": "I'm listening."
+  }
+}
