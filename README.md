@@ -12,6 +12,7 @@
 https://github.com/don2ccc/dsh-pet-lucky
 
 ---
+<img width="537" height="358" alt="image" src="https://github.com/user-attachments/assets/f7216278-929d-4f4f-8a7b-aa557b775609" />
 
 ## 安装
 
